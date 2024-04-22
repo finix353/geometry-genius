@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="m-8">
+
+<body class="mx-8 my-8">
 
     <header>
                                                                                
@@ -45,27 +47,36 @@
                   <h2 class="card-title">Rectangle</h2>
                   <p class="text-center text-3xl">Area = w * L</p>
                   <div>
-                    <input type="text" name="" id="" class="w-24 p-2 text-2xl" placeholder="length">
+                    <input type="text" name="" id="rectangle-length" class="w-24 p-2 text-2xl" placeholder="length">
                     <span class="mr-5">cm</span>
-                    <input type="text"  name="" id="" class="w-24 p-2 text-2xl" placeholder="width">
+                    <input type="text"  name="" id="rectangle-width" class="w-24 p-2 text-2xl" placeholder="width">
                     <span class="mr-5">cm</span>
                   </div>
                   <div>
-                    <p class="text-2xl">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                    <p class="text-2xl">Area: <span id="rectangle-area"></span><span>cm<sup>2</sup></span></p>
                   </div>
                   <div class="card-actions justify-end">
-                    <button onclick="rectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                    <button onclick="rectangleArea() " class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
-              <!-- triangle card -->
+              <!-- parallelogram card -->
               <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p class="text-3xl text-center">Area= b * h</p>
+                   <div>
+                    <input type="text" class="w-24 p-2 text-2xl rounded-sm" name="" id="para-base" placeholder="base">
+                    <span class="mr-5">cm</span>
+                    <input type="text" name="" id="para-height" class="w-24 p-2 text-2xl rounded-sm" placeholder="height">
+                    <span class="mr-5">cm</span>
+                   </div>
+                   <div>
+                    <p class="text-2xl">Area: <span id="para-result"></span><span>cm<sup>2</sup></span></p>
+                   </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="calculateParaArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -88,10 +99,10 @@
       </div>
     </main>
     <footer>
-                                                                 
-  </footer>
-  
+                                                              
+    </footer>
  <script src="js/triangle-calculate.js"></script>
  <script src="js/rectangle-area.js"></script>
+ <script src="js/parallelogram.js"></script>
 </body>
 </html>
